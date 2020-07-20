@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Investigacion - LIC</title>
+</head>
+<body>
+        <section>
+            <span class="tituloo">Investigacion LIC</span>
+          </section>
+          <article>
+            <h1 class="titulocentro">Unobtrusive JavaScript</h1>
+            <p>El Unobtrusive JavaScript es una metodología de mejores prácticas para adjuntar JavaScript al front-end de un
+                 sitio web. Es un ideal para luchar y algo que debemos tener en cuenta cuando agreguemos JavaScript a un sitio.
+                 <br>
+                 <br>
+                Es la separación del comportamiento del marcado o la estructura. Al igual que los gurús de CSS de la antigüedad 
+                nos enseñaron que debería haber una separación entre el diseño y el marcado, también debería haber una separación 
+                entre el comportamiento y el marcado. Eso es HTML para el contenido y la estructura del documento, CSS para el diseño
+                 y el estilo, y Unobtrusive JavaScript para el comportamiento y la interactividad. Sencillo.</p>
+                 <p>Todo se reduce a esto: su sitio, y su contenido, aún deben estar accesibles cuando JavaScript no está disponible; la única forma
+                 de garantizar esto es mediante el uso de técnicas de JavaScript discretas.</p>
+            <img class="historia" src="../img/practice-javascript-and-learn-functions-400x277.png" alt="">
+
+            <h1>Ejemplo</h1>
+            <img class="undefined2" src="../img/ejemplo.PNG" alt="">
+            <p>Ese no es un JavaScript discreto porque el comportamiento y la presentación son mixtos. 
+            El onclick no debería estar allí en html y debería ser parte de javascript en sí, no html.
+              <br>
+              Con el ejemplo anterior, puede ser discreto como este:</p>
+              <img class="undefined3" src="../img/ejemplo2.PNG" alt="">
+          </article>
+
+          <article>
+            <h1 class="titulocentro">Tipos de datos null y undefined en JavaScript</h1>
+            <p>Cuando trabajamos con datos en Javascript nos encontramos con algunos casos algo complicados de gestionar entre los que están undefined y null.
+            Con estos datos debemos tener en cuenta su especial comportamiento y naturaleza. Vamos a dar un repaso a estos tipos de datos con la excusa del desarrollo
+            de una función universal de comparación de cualquier tipo de datos en Javascript que venimos desarrollando en esta serie de artículos.
+                 <br>
+                 <br>
+            <h1>Undefined</h1>
+            Cuando una variable ha quedado sin definir tiene un valor especial denominado undefined, que se podría 
+            traducir como «sin definir«. Este valor puede resultar un poco desconcertante, ya que además de un tipo de 
+            datos, existe una variable con ese nombre y también es un valor como tal.
+            En primer lugar undefined es es un tipo de dato y por lo tanto se puede consultar con typeof.</p>
+            <img class="undefined" src="../img/Undefined.PNG" alt="">
+            <p>También tenemos que tener en cuenta que undefined no es una palabra reservada de Javascript y por
+               lo tanto podemos definir una variable con ese nombre. Si lo intentamos en el contexto global nos 
+               encontraremos que esa variable ha sido definida como {writable: false, configurable: false} y no podemos
+                cambiarla, pero sí podemos hacerlo dentro del alcance de una función, aunque sin duda es una muy mala idea:</p>
+            <img class="undefined" src="../img/Undefined2.PNG" alt="">
+            <br>
+
+            <h1>Null</h1>
+            <p>El caso del valor nulo es también bastante singular. En este caso null es un literal definido
+            en la especificación del lenguaje, no una variable global como en el caso undefined, por lo tanto,
+            es una palabra reservada y no podremos utilizarla como nombre de variable.
+            <br>
+            Podemos directamente utilizar el literal null para comprobar este valor es el que contiene una 
+            determinada variable o es el retorno de una función.</p>
+            <img class="undefined" src="../img/Null.PNG" alt="">
+            <p>A diferencia de undefined, null no dispone de un tipo específico y en el caso de preguntar con typeof 
+            sobre un elemento con valor null nos dirá que es un objeto, lo cual puede desconcertarnos, ya que en la
+            práctica no podemos tratarlo como al resto de objetos.</p>
+            <img class="undefined" src="../img/Null2.PNG" alt="">
+            <p>Que null es un objeto es algo peculiar y debemos tener en considerar que una variable que dice ser un objeto
+            realmente puede contener null y producir un error en nuestro código si lo lo validamos.</p>
+
+          </article>
+</body>
+</html>
